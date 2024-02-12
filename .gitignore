@@ -8,6 +8,7 @@
 
 !*/
 !*/starship.toml
+!*/*/*.code-profile
 
 /.cache
 /.cargo
