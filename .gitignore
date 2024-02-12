@@ -2,5 +2,6 @@
 *
 
 # Apart from
-# Obviously need to keep the .gitignore
 !.gitignore
+!.bashrc
+!.bash_aliases
