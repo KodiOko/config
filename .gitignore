@@ -9,6 +9,8 @@
 !*/
 !*/starship.toml
 !*/*/*.code-profile
+!*/nvim/*
+!*/nvim/lua/*/*
 
 /.cache
 /.cargo
