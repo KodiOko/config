@@ -2,9 +2,15 @@
 *
 
 # Apart from
-!.gitignore
-!.bashrc
-!.bash_aliases
+!/.gitignore
+!/.bashrc
+!/.bash_aliases
 
 !*/
 !*/starship.toml
+
+/.cache
+/.cargo
+/.nvm
+/.local
+/Documents
