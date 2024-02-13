@@ -8,9 +8,9 @@ alias dtl="dotnet list"
 alias dtwr="dotnet watch run"
 
 # ls
-alias ll="ls -lh"
-alias la="ls -ld .?*"
-alias l="ls -CF"
+alias ll="ls_extended -lh"
+alias la="ls_extended -ld .?*"
+alias l="ls_extended -CF"
 
 # Docker
 alias dockerps="docker ps --format 'table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}'"
@@ -24,14 +24,14 @@ alias sourcebash="source ~/.bashrc"
 
 # Enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+	test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+	alias ls='ls --color=auto'
+	#alias dir='dir --color=auto'
+	#alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
+	alias grep='grep --color=auto'
+	alias fgrep='fgrep --color=auto'
+	alias egrep='egrep --color=auto'
 fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
