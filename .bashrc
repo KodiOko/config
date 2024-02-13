@@ -91,6 +91,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# ls_extended Section
+if [ -d "$HOME/projects/ls_extended/bin" ]; then
+	PATH="$PATH:$HOME/projects/ls_extended/bin"
+fi
+
 # NVM install.
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
