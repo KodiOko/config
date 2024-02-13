@@ -15,7 +15,7 @@ format = "\\[⏱ [$duration]($style)\\]"
 
 [git_branch]
 format = "on [$symbol$branch]($style) "
-symbol = " "
+symbol = "  "
 style = "bold purple"
 disabled = false
 
