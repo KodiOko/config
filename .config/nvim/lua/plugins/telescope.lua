@@ -2,7 +2,11 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     keys = {
-      { "<leader><leader>", "<cmd>Telescope find_files no_ignore=true find_command=rg,--hidden,--files<cr>" },
+      {
+        "<leader><leader>",
+        "<cmd>Telescope find_files no_ignore=true find_command=rg,--hidden,--files<cr>",
+        desc = "Find files (all)",
+      },
     },
     opts = {
       defaults = {
