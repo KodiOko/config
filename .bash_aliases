@@ -9,8 +9,14 @@ alias dtwr="dotnet watch run"
 
 # ls
 alias ll="ls_extended -lh"
-alias la="ls_extended -ld .?*"
-alias l="ls_extended -CF"
+alias la="ls -ld .?*"
+alias l="ls -CF"
+
+# cd
+alias idweaver="cd ~/Documents/idweaver/"
+
+# Laravel
+alias sail="bash vendor/bin/sail"
 
 # Docker
 alias dockerps="docker ps --format 'table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}'"

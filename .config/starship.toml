@@ -12,7 +12,7 @@ error_symbol = '[✖](bold red)'
 [cmd_duration]
 min_time = 2000
 style = "yellow bold"
-format = "\\[⏱ [$duration]($style)\\]"
+format = "\\[[$duration]($style)\\]"
 
 [git_branch]
 format = "on [$symbol$branch]($style) "
@@ -27,7 +27,7 @@ deleted_style = "bold red"
 disabled = false
 
 [directory]
-truncation_length = 5
+truncation_length = 0
 format = "[in  $path]($style) "
 style = "#0CA0D8"
 
