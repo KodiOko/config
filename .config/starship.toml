@@ -12,7 +12,7 @@ error_symbol = '[✖](bold red)'
 [cmd_duration]
 min_time = 2000
 style = "yellow bold"
-format = "\\[[$duration]($style)\\]"
+format = "\\[⏱ [$duration]($style)\\]"
 
 [git_branch]
 format = "on [$symbol$branch]($style) "
@@ -59,7 +59,17 @@ detect_extensions = ["rs"]
 detect_files = ["Cargo.toml"]
 
 [nodejs]
-disabled = true
+symbol = " "
+style = "bold green"
+format = " \\[[$symbol($version)]($style)\\] "
+detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
+detect_files = [
+  "package.json",
+  "package-lock.json",
+  "pnpm-lock.yaml",
+  "yarn.lock",
+  "package.x.y.z",
+]
 
 [package]
 disabled = true
