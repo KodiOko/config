@@ -47,21 +47,21 @@ disabled = false
 [php]
 symbol = "🐘 "
 style = "147 bold"
-format = " \\[[$symbol($version)]($style)\\] "
+format = "\\[[$symbol($version)]($style)\\] "
 detect_files = ["composer.json"]
 detect_extensions = ["php"]
 
 [rust]
 symbol = "🦀 "
 style = "bold red"
-format = " \\[[$symbol($version)]($style)\\] "
+format = "\\[[$symbol($version)]($style)\\] "
 detect_extensions = ["rs"]
 detect_files = ["Cargo.toml"]
 
 [nodejs]
 symbol = " "
 style = "bold green"
-format = " \\[[$symbol($version)]($style)\\] "
+format = "\\[[$symbol($version)]($style)\\] "
 detect_extensions = ["js", "mjs", "cjs", "ts", "mts", "cts"]
 detect_files = [
   "package.json",
@@ -70,6 +70,14 @@ detect_files = [
   "yarn.lock",
   "package.x.y.z",
 ]
+
+[docker_context]
+symbol = "🐳"
+format = "[$symbol]($style) "
+style = "blue bold"
+
+[vagrant]
+disabled = true
 
 [package]
 disabled = true

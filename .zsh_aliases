@@ -1,0 +1,4 @@
+alias sail="./vendor/bin/sail"
+
+# Docker
+alias dps="docker ps --format 'table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}'"
