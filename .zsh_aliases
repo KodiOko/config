@@ -1,4 +1,8 @@
 alias sail="./vendor/bin/sail"
 
+# ls
+alias ll="ls_extended -lh"
+alias la="ls -ld .?*"
+
 # Docker
-alias dps="docker ps --format 'table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}'"
+alias dps="docker ps -a --format 'table {{.ID}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}'"

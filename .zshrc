@@ -14,6 +14,11 @@ if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
+# LS Extended
+if [ -f /opt/homebrew/Library/Taps/electrux/homebrew-ls_extended/bin/ls_extended ]; then
+    export PATH="/opt/homebrew/Library/Taps/electrux/homebrew-ls_extended/bin:$PATH"
+fi
+
 # Autocompletions
 fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 autoload -Uz compinit
