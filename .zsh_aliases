@@ -1,4 +1,5 @@
 alias sail="./vendor/bin/sail"
+alias pr="cd ~/Documents/projects/"
 
 # ls
 alias ll="ls_extended -lh"
